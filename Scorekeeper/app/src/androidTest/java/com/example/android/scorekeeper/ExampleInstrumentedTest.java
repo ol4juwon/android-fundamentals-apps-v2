@@ -38,5 +38,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.example.android.scorekeeper", appContext.getPackageName());
+        assertSame("com.example.android.scorekeeper",appContext.getPackageName());
     }
 }
